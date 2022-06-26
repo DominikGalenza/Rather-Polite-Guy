@@ -1,5 +1,6 @@
 using UnityEngine;
 using RPG.Movement;
+using RPG.Core;
 
 namespace RPG.Combat
 {
@@ -30,6 +31,7 @@ namespace RPG.Combat
         public void Attack(CombatTarget combatTarget)
         {
             print("Don't be afraid, soon you'll be in a better place");
+            GetComponent<ActionScheduler>().StartAction(this);
             target = combatTarget.transform;
         }
 
