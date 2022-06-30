@@ -4,13 +4,23 @@ using UnityEngine;
 using RPG.Movement;
 using System;
 using RPG.Combat;
+using RPG.Core;
 
 namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour
     {
+        Health health;
+
+        private void Start() 
+        {
+            health = GetComponent<Health>();
+        }
+
         void Update()
         {
+            if (health.IsDead()) return;
+            
             if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
             print("Your physical limitations don't allow you to go there");
