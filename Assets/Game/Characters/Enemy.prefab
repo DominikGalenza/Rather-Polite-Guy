@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6401442044312094894, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7268635839401645648, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: health
@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 5
+  suspicionTime: 5
 --- !u!114 &8562923121865561697
 MonoBehaviour:
   m_ObjectHideFlags: 0
