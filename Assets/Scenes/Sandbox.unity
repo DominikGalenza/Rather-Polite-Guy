@@ -1046,31 +1046,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4915746770440479097, guid: 1fc8e12668c608e4da1d2890f8d84f85, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fc8e12668c608e4da1d2890f8d84f85, type: 3}
---- !u!1 &1078856283 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4915746770440479097, guid: 1fc8e12668c608e4da1d2890f8d84f85, type: 3}
-  m_PrefabInstance: {fileID: 1078856282}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &1078856284
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078856283}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.3
-  m_Height: 1.8
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1001 &1181187941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1802,6 +1779,7 @@ GameObject:
   - component: {fileID: 1898619263}
   - component: {fileID: 1898619264}
   - component: {fileID: 1898619265}
+  - component: {fileID: 1898619266}
   m_Layer: 2
   m_Name: Intro Sequence
   m_TagString: Untagged
@@ -1887,6 +1865,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc4f35651100f114e82136dac6406ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1898619266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898619260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12e2686f06e27f418dc99fdcaba8154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1958544550
