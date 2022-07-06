@@ -13,11 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6401442044312094882, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -13.8
       objectReference: {fileID: 0}
     - target: {fileID: 6401442044312094882, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13
+      value: 9.6
       objectReference: {fileID: 0}
     - target: {fileID: 6401442044312094882, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29,15 +29,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6401442044312094882, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6401442044312094882, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6401442044312094882, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6401442044312094882, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -53,6 +53,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6401442044312094894, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401442044312094894, guid: 2574cc67677084747aef94318a0001dd, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -106,6 +110,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c0431b34274fa429c455d2a50b7da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &1078856284
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4915746770440479097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1001 &5196070535853412801
 PrefabInstance:
   m_ObjectHideFlags: 0
