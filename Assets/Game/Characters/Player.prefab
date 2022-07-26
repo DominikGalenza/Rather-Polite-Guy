@@ -60,6 +60,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6776455820980671984, guid: 2574cc67677084747aef94318a0001dd, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 3dbb0bc9deda88447a511a0057e1f91a, type: 2}
+    - target: {fileID: 6776455820980671984, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: weaponPrefab
       value: 
       objectReference: {fileID: 3289600067974290411, guid: 53292a0c6ae10334aa08a2bae9bffafb, type: 3}
@@ -128,9 +132,8 @@ MonoBehaviour:
   weaponRange: 2
   timeBetweenAttacks: 1
   weaponDamage: 5
-  weaponPrefab: {fileID: 0}
   handTransform: {fileID: 0}
-  weaponOverride: {fileID: 0}
+  weapon: {fileID: 0}
 --- !u!114 &5116274744475157306
 MonoBehaviour:
   m_ObjectHideFlags: 0
