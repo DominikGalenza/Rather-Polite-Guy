@@ -71,6 +71,14 @@ PrefabInstance:
       propertyPath: handTransform
       value: 
       objectReference: {fileID: 7913341279446829107}
+    - target: {fileID: 6776455820980671984, guid: 2574cc67677084747aef94318a0001dd, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 7913341279446771803}
+    - target: {fileID: 6776455820980671984, guid: 2574cc67677084747aef94318a0001dd, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 7913341279446829107}
     - target: {fileID: 7268635839401645648, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: health
       value: 20
@@ -204,6 +212,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+--- !u!4 &7913341279446771803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 403948, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+  m_PrefabInstance: {fileID: 7913341279446630839}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7913341279446829107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 461188, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}

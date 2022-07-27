@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 6776455820980671984, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 914ac6303902944408de0ade57210432, type: 2}
+      objectReference: {fileID: 11400000, guid: f0f5e6530df47f446814f3f29fc46ca3, type: 2}
     - target: {fileID: 6776455820980671984, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: handTransform
       value: 
@@ -79,6 +79,14 @@ PrefabInstance:
       propertyPath: weaponOverride
       value: 
       objectReference: {fileID: 22100000, guid: 56319cbb843aec048955981b5df5b2b7, type: 2}
+    - target: {fileID: 6776455820980671984, guid: 2574cc67677084747aef94318a0001dd, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 5196070535853622989}
+    - target: {fileID: 6776455820980671984, guid: 2574cc67677084747aef94318a0001dd, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 5196070535853565647}
     - target: {fileID: 8006184972057575233, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: uniqueIdentifier
       value: player
@@ -134,7 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 1
-  handTransform: {fileID: 0}
+  rightHandTransform: {fileID: 0}
+  leftHandTransform: {fileID: 0}
   defaultWeapon: {fileID: 0}
 --- !u!114 &5116274744475157306
 MonoBehaviour:
@@ -209,6 +218,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: bfbe2e8b331e2cc42be1591f949c0e41, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
+--- !u!4 &5196070535853622989 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 481036, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
+  m_PrefabInstance: {fileID: 5196070535853412801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5196070535853565647 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 423694, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
