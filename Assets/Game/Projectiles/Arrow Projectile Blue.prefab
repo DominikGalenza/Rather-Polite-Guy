@@ -71,6 +71,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5280205340521484444, guid: b96f9675dbe778248a27a3f183cd2568, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 3368210601372354383, guid: 7921c903ea12e4446a50c2d9249acf3d, type: 3}
     - target: {fileID: 7803157285848618229, guid: b96f9675dbe778248a27a3f183cd2568, type: 3}
       propertyPath: m_Name
       value: Arrow Projectile Blue
