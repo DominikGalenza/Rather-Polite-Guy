@@ -38,7 +38,7 @@ namespace RPG.Combat
             Transform oldWeapon = rightHand.Find(weaponName);
             if (oldWeapon == null)
             {
-                leftHand.Find(weaponName);
+                oldWeapon = leftHand.Find(weaponName);
             }
             if (oldWeapon == null) return;
 

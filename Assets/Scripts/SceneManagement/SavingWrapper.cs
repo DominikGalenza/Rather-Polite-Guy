@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RPG.Saving;
+using UnityEngine.SceneManagement;
 
 namespace RPG.SceneManagement
 {
@@ -30,6 +31,10 @@ namespace RPG.SceneManagement
             {
                 Save();
             }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Reload();
+            }
         }
 
         public void Save()
@@ -40,6 +45,11 @@ namespace RPG.SceneManagement
         public void Load()
         {
             GetComponent<SavingSystem>().Load(defaultSaveFile);
+        }
+
+        public void Reload()
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }
