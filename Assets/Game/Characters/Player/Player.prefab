@@ -96,6 +96,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7580036058256640013, guid: 2574cc67677084747aef94318a0001dd, type: 3}
+      propertyPath: startingLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580036058256640013, guid: 2574cc67677084747aef94318a0001dd, type: 3}
       propertyPath: characterClass
       value: 0
       objectReference: {fileID: 0}
