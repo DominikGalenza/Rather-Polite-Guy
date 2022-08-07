@@ -35,6 +35,10 @@ namespace RPG.SceneManagement
             {
                 Reload();
             }
+            if (Input.GetKeyDown(KeyCode.Delete))
+            {
+                Delete();
+            }
         }
 
         public void Save()
@@ -50,6 +54,11 @@ namespace RPG.SceneManagement
         public void Reload()
         {
             SceneManager.LoadScene(0);
+        }
+
+        public void Delete()
+        {
+            GetComponent<SavingSystem>().Delete(defaultSaveFile);
         }
     }
 }
