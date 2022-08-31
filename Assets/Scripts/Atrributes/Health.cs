@@ -15,11 +15,6 @@ namespace RPG.Attributes
         [SerializeField] float regenerateFraction = 0.7f;
         [SerializeField] UnityEvent<float> takeDamage;
 
-        // [System.Serializable]
-        // public class TakeDamageEvent : UnityEvent<float>
-        // {
-        // }
-
         LazyValue<float> healthPoints;
 
         bool isDead = false;
@@ -81,7 +76,12 @@ namespace RPG.Attributes
 
         public float GetPercentage()
         {
-            return 100 * (healthPoints.value / GetComponent<BaseStats>().GetStat(Stat.Health));
+            return 100 * GetFraction();
+        }
+
+        public float GetFraction()
+        {
+            return healthPoints.value / GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         private void Die()
