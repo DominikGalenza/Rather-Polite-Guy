@@ -19,6 +19,7 @@ namespace RPG.Control
 
         [Range(0, 1)]
         [SerializeField] float patrolSpeedFraction = 0.2f;
+        [SerializeField] float shoutDistance = 5f;
 
         Fighter fighter;
         GameObject player;
@@ -87,6 +88,21 @@ namespace RPG.Control
         {
             timeSinceLastSawPlayer = 0;
             fighter.Attack(player);
+
+            AggrevateNearbyEnemies();
+        }
+
+        private void AggrevateNearbyEnemies()
+        {
+            RaycastHit[] hits = Physics.SphereCastAll(transform.position, shoutDistance, Vector3.up, 0);
+
+            foreach (RaycastHit hit in hits)
+            {
+                AIController aI = hit.collider.GetComponent<AIController>();
+                if (aI == null || aI == this) continue;
+
+                aI.Aggrevate();
+            }
         }
 
         private void SuspicionBehaviour()
