@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b856fd61a3b12845a6ded6a0b46f1a4, type: 3}
   m_Name: Bow Red Projectile
   m_EditorClassIdentifier: 
+  itemID: b63b24cb-87e8-49b0-8cd7-1eddf13ad028
+  displayName: 
+  description: Magic Homing Bow
+  icon: {fileID: 21300000, guid: f8078c2bb5ee88d4a9472f76e501e0f3, type: 3}
+  pickup: {fileID: 6904958890397960567, guid: 617afd07c09118c4686243a92a3f84f4, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   equippedPrefab: {fileID: 320211842135958694, guid: 96026fd05a09ec44e80d943d7c046bfb, type: 3}
   animatorOverride: {fileID: 22100000, guid: 6ab8ca0612fc60a43a1694159190c525, type: 2}
   weaponDamage: 10
