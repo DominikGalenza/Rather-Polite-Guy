@@ -216,18 +216,6 @@ MonoBehaviour:
   waypointDwellTime: 3
   patrolSpeedFraction: 0.2
   shoutDistance: 5
---- !u!114 &8562923121865561697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6804927902233377823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 128d288667b989c4bbb05e7fdcbfa520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6521828281116474158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,14 +230,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scatterDistance: 1
   findPointInRange: 0.1
-  dropLibrary:
-  - {fileID: 11400000, guid: 33a0a29141a2b43459b5086a4fa47ac2, type: 2}
-  - {fileID: 11400000, guid: ddb418b843716c046a5a59543e615c40, type: 2}
-  - {fileID: 11400000, guid: 5ccf6e16df47de948b3f1cc6c1d967d4, type: 2}
-  - {fileID: 11400000, guid: f0f5e6530df47f446814f3f29fc46ca3, type: 2}
-  - {fileID: 11400000, guid: 573e34c62c8e1684eb7d42053bd87445, type: 2}
-  - {fileID: 11400000, guid: 3dbb0bc9deda88447a511a0057e1f91a, type: 2}
-  numberOfDrops: 2
+  dropLibrary: {fileID: 11400000, guid: d4f21bfc7b66464479e0ac816334120c, type: 2}
+--- !u!114 &8562923121865561697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804927902233377823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 128d288667b989c4bbb05e7fdcbfa520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6305209135449882174
 PrefabInstance:
   m_ObjectHideFlags: 0
