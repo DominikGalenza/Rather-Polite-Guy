@@ -16,6 +16,8 @@ namespace RPG.Dialogue.Editor
         [NonSerialized] DialogueNode creatingNode = null;
         [NonSerialized] DialogueNode deletingNode = null;
         [NonSerialized] DialogueNode linkingParentNode = null;
+        [NonSerialized] bool draggingCanvas = false;
+        [NonSerialized] Vector2 draggingCanvasOffset;
         Vector2 scrollPosition;
 
         [MenuItem("Window/Dialogue Editor")]
@@ -110,6 +112,11 @@ namespace RPG.Dialogue.Editor
                 {
                     draggingOffset = draggingNode.rect.position - Event.current.mousePosition;
                 }
+                else
+                {
+                    draggingCanvas = true;
+                    draggingCanvasOffset = Event.current.mousePosition + scrollPosition;
+                }
             }
             else if (Event.current.type == EventType.MouseDrag && draggingNode != null)
             {
@@ -117,9 +124,18 @@ namespace RPG.Dialogue.Editor
                 draggingNode.rect.position = Event.current.mousePosition + draggingOffset;
                 GUI.changed = true;
             }
+            else if (Event.current.type == EventType.MouseDrag && draggingCanvas)
+            {
+                scrollPosition = draggingCanvasOffset - Event.current.mousePosition;
+                GUI.changed = true;
+            }
             else if (Event.current.type == EventType.MouseUp && draggingNode != null)
             {
                 draggingNode = null;
+            }
+            else if (Event.current.type == EventType.MouseUp && draggingCanvas)
+            {
+                draggingCanvas = false;
             }
         }
 
