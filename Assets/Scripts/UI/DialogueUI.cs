@@ -12,6 +12,9 @@ namespace RPG.UI
         PlayerConversant playerConversant;
         [SerializeField] TextMeshProUGUI AIText;
         [SerializeField] Button nextButton;
+        [SerializeField] Transform choiceRoot;
+        [SerializeField] GameObject choicePrefab;
+        [SerializeField] GameObject AIResponse;
 
         void Start()
         {
@@ -28,8 +31,37 @@ namespace RPG.UI
 
         void UpdateUI()
         {
-            AIText.text = playerConversant.GetText();
-            nextButton.gameObject.SetActive(playerConversant.HasNext());
+            AIResponse.SetActive(!playerConversant.IsChoosing());
+            choiceRoot.gameObject.SetActive(playerConversant.IsChoosing());
+
+            if (playerConversant.IsChoosing())
+            {
+                BuildChoiceList();
+            }
+            else
+            {
+                AIText.text = playerConversant.GetText();
+                nextButton.gameObject.SetActive(playerConversant.HasNext());    
+            }
+        }
+
+        private void BuildChoiceList()
+        {
+            choiceRoot.DetachChildren();
+
+            foreach (DialogueNode choice in playerConversant.GetChoices())
+            {
+                GameObject choiceInstance = Instantiate(choicePrefab, choiceRoot);
+                TextMeshPro textComponent = choiceInstance.GetComponentInChildren<TextMeshPro>();
+                textComponent.text = choice.GetText();
+                Button button = choiceInstance.GetComponentInChildren<Button>();
+
+                button.onClick.AddListener(() =>
+                {
+                    playerConversant.SelectChoice(choice);
+                    UpdateUI();
+                });
+            }
         }
     }
 }
