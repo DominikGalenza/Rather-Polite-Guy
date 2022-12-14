@@ -228,6 +228,19 @@ MonoBehaviour:
     hotspot: {x: 0, y: 0}
   maxNavMeshProjectionDistance: 1
   spherecastRadius: 1
+--- !u!114 &5260608368156877031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4915746770440479097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8615901fa7140469384f1002175af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testDialogue: {fileID: 11400000, guid: d9a51d56b2a88e0498dbbb54e0515d3f, type: 2}
 --- !u!114 &5480111132010369151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,19 +269,6 @@ MonoBehaviour:
   scatterDistance: 2
   findPointInRange: 0.1
   dropLibrary: {fileID: 0}
---- !u!114 &5260608368156877031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4915746770440479097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8615901fa7140469384f1002175af4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentDialogue: {fileID: 11400000, guid: d9a51d56b2a88e0498dbbb54e0515d3f, type: 2}
 --- !u!1001 &5196070535853412801
 PrefabInstance:
   m_ObjectHideFlags: 0
