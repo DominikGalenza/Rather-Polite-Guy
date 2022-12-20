@@ -819,6 +819,7 @@ MonoBehaviour:
   choiceRoot: {fileID: 2784535734096893164}
   choicePrefab: {fileID: 2574868967083420860, guid: 238e89cab3bdaf94fa124d33408c03ca, type: 3}
   AIResponse: {fileID: 9039870082293678794}
+  quitButton: {fileID: 5345330109162151214}
 --- !u!1 &9025858254745755225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1129,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8700497232018865745, guid: 238e89cab3bdaf94fa124d33408c03ca, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700497232018865745, guid: 238e89cab3bdaf94fa124d33408c03ca, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
@@ -1250,6 +1255,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8700497232018865745, guid: 238e89cab3bdaf94fa124d33408c03ca, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700497232018865745, guid: 238e89cab3bdaf94fa124d33408c03ca, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
@@ -1369,6 +1378,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8700497232018865745, guid: 238e89cab3bdaf94fa124d33408c03ca, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700497232018865745, guid: 238e89cab3bdaf94fa124d33408c03ca, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8700497232018865745, guid: 238e89cab3bdaf94fa124d33408c03ca, type: 3}
